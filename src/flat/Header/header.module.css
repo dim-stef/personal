@@ -1,0 +1,7 @@
+.primaryHeaderLink {
+  height: 100%;
+  cursor: pointer;
+  display: flex;
+  place-items: center;
+  font-size: 1.4rem;
+}

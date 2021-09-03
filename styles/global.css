@@ -2,3 +2,12 @@ body{
     padding: 0;
     margin: 0;
 }
+
+/* h1{
+    font-size: 2rem !important;
+} */
+
+*{
+    /* font-family: 'Roboto Mono', monospace; */
+    font-family: 'Fira Code', monospace;
+}

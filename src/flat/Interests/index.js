@@ -1,10 +1,8 @@
-import { Box } from "@chakra-ui/layout";
+import List from "../../features/List";
 
-function Interests() {
+function Interests({interests}) {
   return(
-    <Box>
-
-    </Box>
+    <List title="interests" items={interests}/>
   )
 }
 

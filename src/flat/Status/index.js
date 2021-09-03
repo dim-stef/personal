@@ -10,7 +10,7 @@ function Status() {
       w="100%"
     >
       <Heading as="h2" color="white">
-        status: looking
+        status: open to offers
       </Heading>
     </Flex>
   );

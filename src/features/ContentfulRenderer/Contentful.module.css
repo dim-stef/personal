@@ -1,0 +1,9 @@
+.contentfulContainer p,
+.contentfulContainer b,
+.contentfulContainer a,
+.contentfulContainer {
+  display: inline;
+}
+
+.contentfulContentBoxContainer {
+}

@@ -6,6 +6,7 @@ import Status from '../src/flat/Status'
 import Interests from '../src/flat/Interests'
 import Skills from '../src/flat/Skills';
 import Learning from '../src/flat/Learning';
+import KnowMore from '../src/flat/KnowMore';
 
 export default function Home({interests, skills, learning}) {
   return (
@@ -23,6 +24,7 @@ export default function Home({interests, skills, learning}) {
           <Skills skills={skills}/>
           <Learning learning={learning}/>
         </Flex>
+        <KnowMore />
       </Flex>
     </>
   )

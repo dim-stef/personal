@@ -6,8 +6,8 @@ function Header() {
     <Flex w="100%" placeItems="center" h="80px" mb="10">
       <HomeHeaderLink href="/" />
       <HeaderLink href='/about' title='about'/>
-      <HeaderLink href='/about' title='projects'/>
-      <HeaderLink href='/about' title='contact'/>
+      <HeaderLink href='/projects' title='projects'/>
+      <HeaderLink href='/contact' title='contact'/>
     </Flex>
   );
 }

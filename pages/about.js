@@ -4,14 +4,13 @@ import { Heading, Flex, Stack, Box } from "@chakra-ui/layout";
 import ContentfulRenderer from "../src/features/ContentfulRenderer";
 
 export default function About({ data }) {
-  console.log(data);
   return (
     <>
       <Head>
         <title>About</title>
       </Head>
-      <Heading as="h1" fontWeight="400">
-        Hi, my name is Jim. I am a Web Developer living in Athens, GR.
+      <Heading w="100%" as="h1" fontWeight="400">
+        Some stuff about me
       </Heading>
       <Box display="contents">
         <ContentfulRenderer node={data} />

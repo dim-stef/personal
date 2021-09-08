@@ -24,7 +24,9 @@ function ContentfulRenderer({ node }) {
         if (innerNode.nodeType == "hyperlink") {
           return (
             <Link href={innerNode.data.uri}>
-              <ContentfulRenderer node={innerNode} />
+              <a target="_blank" style={{color: '#2196f3'}}>
+                <ContentfulRenderer node={innerNode} />
+              </a>
             </Link>
           );
         }

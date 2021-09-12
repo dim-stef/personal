@@ -1,17 +1,17 @@
 import { ChakraProvider } from "@chakra-ui/react";
-import { theme as chakraTheme } from '@chakra-ui/react'
-import { extendTheme } from "@chakra-ui/react"
+import { theme as chakraTheme } from "@chakra-ui/react";
+import { extendTheme } from "@chakra-ui/react";
 import { Flex } from "@chakra-ui/layout";
 import Layout from "../src/flat/Layout";
-import '../styles/global.css';
-
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import "../styles/global.css";
 
 // declare a variable for fonts and set our fonts. I am using Inter with various backups but you can use `Times New Roman`. Note we can set different fonts for the body and heading.
 const fonts = {
   ...chakraTheme.fonts,
   body: `'Roboto Mono', monospace`,
-  heading: `'Roboto Mono', monospace`
-}
+  heading: `'Roboto Mono', monospace`,
+};
 
 // declare a variable for our theme and pass our overrides in the e`xtendTheme` method from chakra
 const customTheme = extendTheme({
@@ -28,10 +28,10 @@ const customTheme = extendTheme({
         // bg: "gray.400",
         // color: "white",
       },
-      heading:{
+      heading: {
         fontFamily: "'Roboto Mono', monospace",
       },
-      mono:{
+      mono: {
         fontFamily: "'Roboto Mono', monospace",
       },
       // styles for the `a`
@@ -43,7 +43,7 @@ const customTheme = extendTheme({
       },
     },
   },
-})
+});
 
 function MyApp({ Component, pageProps }) {
   return (

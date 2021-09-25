@@ -12,6 +12,9 @@ function getMark(marks) {
 }
 
 function ContentfulRenderer({ node }) {
+  if(!node){
+    return null;
+  }
   let content = node.content;
 
   return (

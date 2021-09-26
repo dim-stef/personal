@@ -1,4 +1,4 @@
-import { AiFillGithub, AiFillMediumCircle } from "react-icons/ai";
+import { AiFillGithub, AiFillMediumCircle, AiFillMail } from "react-icons/ai";
 import { SiUpwork } from "react-icons/si";
 import { Box, Stack, Flex, Heading, Text } from "@chakra-ui/layout";
 import Link from "next/link";
@@ -31,6 +31,14 @@ function KnowMore() {
         >
           <a style={{ cursor: "pointer" }} target="_blank">
             <SiUpwork size={36} color="gray" />
+          </a>
+        </Link>
+        <Link
+          href="mailto:jimstef@outlook.com"
+          passHref
+        >
+          <a style={{ cursor: "pointer" }} target="_blank">
+            <AiFillMail size={36} color="gray" />
           </a>
         </Link>
       </Stack>

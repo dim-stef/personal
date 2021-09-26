@@ -7,7 +7,7 @@ function Header() {
       <HomeHeaderLink href="/" />
       <HeaderLink href='/about' title='about'/>
       <HeaderLink href='/projects' title='projects'/>
-      <HeaderLink href='/contact' title='contact'/>
+      {/* <HeaderLink href='/contact' title='contact'/> */}
     </Flex>
   );
 }

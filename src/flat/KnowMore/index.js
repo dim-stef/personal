@@ -11,7 +11,7 @@ function KnowMore() {
       justifyContent="center"
       alignItems="center"
     >
-      <Heading as="h5" size="md">
+      <Heading as="h5" size="md" textAlign="center">
         you probably want to learn more about me <sup>please</sup>
       </Heading>
       <Stack spacing={4} isInline direction="row" mt="5">

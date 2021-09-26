@@ -84,8 +84,8 @@ function MobileMenuOverlay({ isOpen, setOpen }) {
             <AiFillCloseCircle size={36} />
           </Box>
           <Flex flexDirection="column" justifyContent="center" alignItems="center" mt={24}>
-            <HeaderLink href="/about" title="about" style={{marginLeft: 20, fontSize: 30}}/>
-            <HeaderLink href="/projects" title="projects" style={{marginLeft: 20, fontSize: 30}}/>
+            <HeaderLink href="/about" title="about" style={{marginLeft: 20, fontSize: 30}} onClick={()=>setOpen(false)}/>
+            <HeaderLink href="/projects" title="projects" style={{marginLeft: 20, fontSize: 30}} onClick={()=>setOpen(false)}/>
           </Flex>
         </Box>
       </animated.div>
@@ -93,11 +93,12 @@ function MobileMenuOverlay({ isOpen, setOpen }) {
   });
 }
 
-function HeaderLink({ href, title, style={} }) {
+function HeaderLink({ href, title, style={}, onClick = () =>{} }) {
   return (
     <Flex placeItems="center" h="100%">
       <Link href={href}>
         <a
+          onClick={onClick}
           style={{
             height: "100%",
             cursor: "pointer",

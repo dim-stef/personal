@@ -1,12 +1,23 @@
 const contentful = require("contentful");
 import Head from 'next/head'
 import { Heading, Flex, Stack } from '@chakra-ui/layout'
+import { extendTheme } from "@chakra-ui/react"
+import { createBreakpoints } from "@chakra-ui/theme-tools"
 import Skull from '../src/flat/Icons/Skull'
 import Status from '../src/flat/Status'
 import Interests from '../src/flat/Interests'
 import Skills from '../src/flat/Skills';
 import Learning from '../src/flat/Learning';
 import KnowMore from '../src/flat/KnowMore';
+
+const breakpoints = createBreakpoints({
+  sm: "480px",
+  md: "768px",
+  lg: "960px",
+  xl: "1200px",
+})
+
+const theme = extendTheme({ breakpoints })
 
 export default function Home({interests, skills, learning}) {
   return (
@@ -19,7 +30,7 @@ export default function Home({interests, skills, learning}) {
       <Flex flexDirection="column" mt="20" mb="20" w="100%">
         {/* <Skull height="40" width="40"/> */}
         <Status/>
-        <Flex flexWrap="wrap" w="100%" justifyContent="space-between">
+        <Flex flexDirection={{base: 'column', sm: 'row'}} flexWrap="wrap" w="100%" justifyContent="space-between" alignItems={{base: 'center', sm: 'start'}}>
           <Interests interests={interests}/>
           <Skills skills={skills}/>
           <Learning learning={learning}/>

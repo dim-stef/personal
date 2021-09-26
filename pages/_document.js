@@ -32,6 +32,7 @@ class MyDocument extends Document {
           ></link>
         </Head>
         <body>
+          <div id="modal" style={{zIndex: 1000, position: 'fixed', top:0, left: 0}}></div>
           <Main />
           <NextScript />
         </body>

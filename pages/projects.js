@@ -1,4 +1,5 @@
 const contentful = require("contentful");
+import Head from 'next/head'
 import { Box, Flex } from "@chakra-ui/layout";
 import Project from "../src/features/Project";
 

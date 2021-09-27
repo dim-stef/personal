@@ -31,7 +31,7 @@ class MyDocument extends Document {
             rel="stylesheet"
           ></link>
         </Head>
-        <body>
+        <body style={{overflow: 'scroll'}}>
           <div id="modal" style={{zIndex: 1000, position: 'fixed', top:0, left: 0}}></div>
           <Main />
           <NextScript />

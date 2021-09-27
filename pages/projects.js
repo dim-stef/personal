@@ -2,17 +2,22 @@ const contentful = require("contentful");
 import { Box, Flex } from "@chakra-ui/layout";
 import Project from "../src/features/Project";
 
-export default function Projects({data}) {
-  console.log("data", data);
-  return(
-    <Flex flexFlow="column" w="100%">
-      {data.map((project, i)=>{
-        return(
-          <Project key={i} project={project}/>
-        )
-      })}
-    </Flex>
-  )
+export default function Projects({ data }) {
+  return (
+    <>
+      <Head>
+        <title>Projects</title>
+        <meta name="description" content="A small list of a few of my projects." />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
+      <Flex flexFlow="column" w="100%">
+        {data.map((project, i) => {
+          return <Project key={i} project={project} />;
+        })}
+      </Flex>
+    </>
+  );
 }
 
 export async function getStaticProps() {

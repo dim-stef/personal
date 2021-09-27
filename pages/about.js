@@ -8,6 +8,8 @@ export default function About({ data }) {
     <>
       <Head>
         <title>About</title>
+        <meta name="description" content="About me page."/>
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Heading w="100%" as="h1" fontWeight="400">
         Some stuff about me

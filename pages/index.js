@@ -23,7 +23,8 @@ export default function Home({interests, skills, learning}) {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
+        <title>Dimitris Stefanakis</title>
+        <meta name="description" content="Welcome to my personal website! Some brief info about me and my work."/>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Heading as="h1" fontWeight="400">Hi, my name is Jim. I am a Web Developer living in Athens, GR.</Heading>

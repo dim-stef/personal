@@ -15,7 +15,7 @@ function KnowMore() {
         you probably want to learn more about me <sup>please</sup>
       </Heading>
       <Stack spacing={4} isInline direction="row" mt="5">
-        <Link href="https://github.com/dim-stef" passHref>
+        <Link href="https://github.com/dimstefanakis" passHref>
           <a style={{ cursor: "pointer" }} target="_blank">
             <AiFillGithub size={36} color="gray" />
           </a>
